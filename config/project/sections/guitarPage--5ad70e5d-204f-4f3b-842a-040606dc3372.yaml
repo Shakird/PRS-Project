@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: guitarPage
+name: 'Guitar Page'
+propagationMethod: all
+siteSettings:
+  59c057cf-d149-41ac-a571-70b3f5928407: # PRS Guitars
+    enabledByDefault: true
+    hasUrls: true
+    template: index
+    uriFormat: Guitar
+type: channel

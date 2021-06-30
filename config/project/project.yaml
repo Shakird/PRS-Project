@@ -1,0 +1,27 @@
+dateModified: 1624382477
+email:
+  fromEmail: admin@prs.com
+  fromName: 'PRS Guitars'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  imager-x:
+    edition: lite
+    enabled: true
+    licenseKey: XRVEZBUJAYIKIQTHVVXZ16BP
+    schemaVersion: 3.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'PRS Guitars'
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

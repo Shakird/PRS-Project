@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'PRS Guitars'
+primary: true
+siteGroup: 7ad4b294-bb96-4f8e-a80d-7b483e7ef898 # PRS Guitars
+sortOrder: 1

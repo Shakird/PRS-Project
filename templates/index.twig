@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PRS Guitars | Custom 24</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/style.css">  
+</head>
+
+<body>
+{% includeJsFile "assets/script.js"%}
+{% block content %}
+{% for guitarPage in craft.entries.section('guitarPage').all()%}
+
+ <link rel="icon" type="img/png" sizes="16x16" href="{{ guitarPage.companyLogo[0].url()}}">
+
+<div>
+    <div class="header">
+        <a href="https://prsguitars.com" class="logo"><img src="{{guitarPage.companyLogo[0].getUrl('small')}}" alt="Company Logo"></a>
+    </div>
+
+  <div class="section">
+      <h1 class="guitarName">{{ guitarPage.guitarName }}</h1>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="{{guitarPage.guitarImage[0].url()}}">
+        <div class="text">Front view</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="{{guitarPage.guitarImage[1].url()}}">
+        <div class="text">Quarter view</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="{{guitarPage.guitarImage[2].url()}}">
+        <div class="text">Rear view</div>
+      </div>
+   
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+
+    </p>{{guitarPage.guitarDiscription}}</p>
+    <img src="{{guitarPage.guitarImage[3].getUrl('medium')}}" class="guitar-side" alt="Guitar Image">
+    <a href="https://prsguitars.com/electrics/model/custom_24_2021" class="link"><button type="button" class="button"> Learn More </button></a>
+  </div>
+</div>
+
+{% endfor %}
+{% endblock %}
+
+<div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Inside PRS</h3>
+                        <ul>
+                            <li><a href="https://prsguitars.com/blog">Blog</a></li>
+                            <li><a href="https://forums.prsguitars.com/">Forum</a></li>
+                            <li><a href="https://prsguitars.com/newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="https://prsguitars.com/careers">Careers</a></li>
+                            <li><a href="https://prsguitars.com/events">Events</a></li>
+                            <li><a href="https://prsguitars.com/mediaroom">Media Room</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>More Information</h3>
+                        <ul>
+                            <li><a href="https://prsguitars.com/privacy">Privacy Policy</a></li>
+                            <li><a href="https://prsguitars.com/register">Register Your PRS</a></li>
+                            <li><a href="https://prsguitars.com/intellectual-property-policy">Intellectual Property Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="https://facebook.com/prsguitars"><i class="icon ion-social-facebook"></i></a><a href="https//twitter.com/prsguitars"><i class="icon ion-social-twitter"></i></a><a href="https://youtube.com/prsguitars"><i class="icon ion-social-youtube"></i></a><a href="https://instagram.com/prsguitars"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright"><a href="https://prsguitars.com/copyright">PRS Guitars © 2021</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/script.js">
+</body>
+</html>

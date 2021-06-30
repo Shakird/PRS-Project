@@ -1,0 +1,74 @@
+fieldLayouts:
+  117cae09-14a0-4c7a-a553-a0fd135c0dec:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4c1cf523-a41d-46f4-9977-038a552503a1 # Company logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 706f3067-fa55-40e4-b190-059ed27daf58 # Guitar Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 11d350be-41c0-4ec3-a7f8-4e82d7654e7b # Guitar Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2f6205a6-f554-49e4-bb5a-83e27474a521 # Guitar Discription
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: guitarPage
+hasTitleField: true
+name: 'Guitar Page'
+section: 5ad70e5d-204f-4f3b-842a-040606dc3372 # Guitar Page
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
